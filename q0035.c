@@ -3,14 +3,14 @@
 #include<string.h>
 int main()
 {
-    int i=0,count=0;
-    char string[100];
-    printf("give the string \n");
-    gets(string);
-    while(string[i]!='\0')
+    int count=0,i=0;
+    char str[100];
+    gets(str);
+// Making a loop that starts from 0 and iterates till it reaches null character("\n")
+    while(str[i]!='\0')
     {
-        count++;
         i++;
+        count++;
     }
-    printf("size of string is %d \n",count);
+    printf("the length  of string is %d\n",count);
 }

@@ -3,19 +3,17 @@
 #include<string.h>
 int main()
 {
-    int temp;
-    char name[100];
-    gets(name);
-    int len=strlen(name);
-    int first=0;
-    int last=len-1;
-    while(first<last)
+   
+    char str[100];
+    gets(str);
+    int len=strlen(str);
+    char str1[len];
+    for(int i=0,j=len-1;j>=0;j--,i++)
     {
-        temp=name[first];
-        name[first]=name[last];
-        name[last]=temp;
-        first++;
-        last--;
+        str1[i]=str[j];
     }
-    fputs(name,stdout);    
+    //increasing one element by adding null character('\0')
+    str1[len]='\0';
+   puts(str1);
+    
 }

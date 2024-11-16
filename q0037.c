@@ -8,6 +8,7 @@ int main ()
     printf("give two  string\n");
     gets(string1);
     gets(string2);
+    // concatenating a string by strct function add the string2 to string1 but string2 remain same
     strcat(string1,string2);
     printf("%s\n",string1);
 }

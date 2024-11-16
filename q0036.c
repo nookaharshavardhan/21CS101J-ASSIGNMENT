@@ -8,5 +8,6 @@ int main()
     gets(string);
     strcpy(string1,string);
     printf("%s\n",string1);
+    printf("%s\n",string);
 
 }

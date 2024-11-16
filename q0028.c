@@ -1,30 +1,26 @@
 // c program to sort an array in decending order
 #include<stdio.h>
-int main ()
+#include<string.h>
+int main()
 {
-    int size;
-    printf("give the size of array\n");
-    scanf("%d",&size);
-    int number[size];
-    int temp;
-    for(int i=0;i<size;i++)
+    int i,j,temp;
+    char str[100];
+    fgets(str,100,stdin);
+    int len=strlen(str);
+    for(int k=0;k<len-1;k++)
     {
-        scanf("%d",&number[i]);
-    }
-    for(int i=0;i<size-1;i++)
-    {
-        for(int j=0;j<size-i-1;j++)
+    for(int i=0;i<len-1;i++)
+     {
+        for(int j=i+1;j<=i+1;j++) // we can also do this with two for loops(i,j) with keeping j condition as j<len 
         {
-            if(number[j]<number[j+1])
+            if(str[i]<str[j])
             {
-                temp=number[j+1];
-                number[j+1]=number[j];
-                number[j]=temp;
+                temp=str[j];
+                str[j]=str[i];
+                str[i]=temp;
             }
         }
+     }
     }
-    for (int i=0;i<size;i++)
-    {
-        printf("-->%d\n",number[i]);
-    }
+    puts(str);
 }
