@@ -1,4 +1,4 @@
-// C program to find the no.of elements inan array
+// C program to find the no.of elements in an array
 #include<stdio.h>
 int main()
 {
