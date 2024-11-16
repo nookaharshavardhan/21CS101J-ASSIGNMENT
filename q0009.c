@@ -1,16 +1,19 @@
-// progrsm to check a number if it is even or odd
+// C PROGRAM TO FIND SUM OF ALL DIGITS IN A NUMBER
 #include<stdio.h>
+#include<string.h>
 
 int main ()
 {
-    int a;
-    printf("give the numbers\n");
-    scanf("%d",&a);
-    if(a%2==0)
+    char str[100];
+    fgets(str,100,stdin);
+    int len=strlen(str),sum=0;
+    for(int i=0;i<len;i++)
     {
-        printf("it is a even number\n");
+        if(str[i]>='0' && str[i]<='9')
+        {
+        sum=sum+str[i]-'0';
+        }
     }
-    else{
-        printf("it is a odd number\n");
-    }
+    printf("the sum of digits in a number is %i\n",sum);
+
 }
