@@ -4,8 +4,6 @@
 
 int sum_of_numbers(int a);
 
-
-
 int main()
 {
     int a;
@@ -21,10 +19,7 @@ int sum_of_numbers(int a)
     {
         return 0;
     }
-
     //CREATING A RECURSION THAT ADD LIKE--->(ADD LAST DIGIT AND REMOVE IT FROM THE NUMBER)+(ADD LAST DIGIT AND REMOVE IT FROM THE NUMBER)+................SO ON TILL IT REACHES 0 AND RETURN 0 TO ADD
     int b=a%10;
     return b+sum_of_numbers(a/10);
-   
-
 }
